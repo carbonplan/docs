@@ -16,7 +16,7 @@
   "author": "freeman-lab",
   "license": "MIT",
   "dependencies": {
-    "@carbonplan/components": "^8.1.1",
+    "@carbonplan/components": "^10.2.1",
     "@carbonplan/icons": "^1.0.0",
     "@carbonplan/prism": "^1.0.3",
     "@carbonplan/theme": "^6.0.1",
