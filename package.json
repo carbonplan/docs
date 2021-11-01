@@ -21,7 +21,7 @@
     "@carbonplan/prism": "^1.0.3",
     "@carbonplan/theme": "^6.0.1",
     "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^10.2.3",
+    "@next/mdx": "^12.0.2",
     "@theme-ui/color": "^0.11.1",
     "next": "^10.1.3",
     "react": "^17.0.2",
