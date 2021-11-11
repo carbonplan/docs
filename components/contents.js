@@ -17,6 +17,5 @@ export const contents = {
   Basics: {
     GitHub: '/github',
     'Code of conduct': '/conduct',
-    'Pre-commit': '/misc/pre-commit',
   },
 }
