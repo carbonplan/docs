@@ -19,6 +19,7 @@ This page serves as a general contribution guide for CarbonPlan data science pro
   - git workflow for committing and pushing your changes, open a pull request
   - code review
 - project versioning
+- more?
 
 export default ({ children }) => (
   <Section name='contributiing'>{children}</Section>
