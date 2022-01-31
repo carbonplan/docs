@@ -8,12 +8,12 @@ export const contents = {
     Contributing: '/tech/data-science/contributing',
     Environments: '/tech/data-science/environments',
     Style: '/tech/data-science/style',
-    Testing: '/tech/data-science/testing'
+    Testing: '/tech/data-science/testing',
   },
   'Front-end': {
     Overview: '/tech/front-end',
     Articles: '/tech/front-end/articles',
     Contributing: '/tech/front-end/contributing',
-    Deployment: '/tech/front-end/deployment'
-  }
+    Deployment: '/tech/front-end/deployment',
+  },
 }

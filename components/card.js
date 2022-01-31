@@ -9,7 +9,7 @@ const Card = ({ name, language, color, children }) => {
       sx={{
         textDecoration: 'none',
         '&:hover': {
-          color: 'primary'
+          color: 'primary',
         },
       }}
     >
