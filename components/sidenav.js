@@ -61,7 +61,7 @@ const Sidenav = ({ active, expanded }) => {
         }}
       >
         <Link
-          href={'/'}
+          href={'/tech'}
           sx={{
             width: 'fit-content',
             display: 'block',

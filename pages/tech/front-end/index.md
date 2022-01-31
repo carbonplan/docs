@@ -6,4 +6,4 @@ import Section from '../../../components/section'
 - core projects
 - references to guides
 
-export default ({ children }) => <Section name='front-end'>{children}</Section>
+export default ({ children }) => <Section name='overview'>{children}</Section>
