@@ -2,10 +2,10 @@ import { Box } from 'theme-ui'
 import { Link } from '@carbonplan/components'
 import { alpha } from '@theme-ui/color'
 
-const Card = ({ name, language, color, children }) => {
+const Card = ({ name, language, color, href, children }) => {
   return (
     <Link
-      href='/ton-year'
+      href={href}
       sx={{
         textDecoration: 'none',
         '&:hover': {

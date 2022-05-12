@@ -3,6 +3,10 @@
     {
       "source": "/ton-year(.*)",
       "destination": "https://ton-year.docs.carbonplan.org/ton-year$1"
+    },
+    {
+      "source": "/cmip6-downscaling(.*)",
+      "destination": "https://cmip6-downscaling.docs.carbonplan.org/cmip6-downscaling$1"
     }
   ],
   "github": {
