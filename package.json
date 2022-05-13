@@ -21,6 +21,7 @@
     "@carbonplan/prism": "^1.0.3",
     "@carbonplan/theme": "^7.0.0",
     "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^12.0.9",
     "@theme-ui/color": "^0.13.1",
