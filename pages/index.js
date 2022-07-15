@@ -17,7 +17,7 @@ const Index = () => {
           <Row columns={[2, 3, 3, 3]}>
             <Card
               name={'Ton-year'}
-              language={'python'}
+              language={'Python'}
               color={'blue'}
               href={'/ton-year'}
             >
@@ -26,12 +26,20 @@ const Index = () => {
             </Card>
             <Card
               name={'CMIP6-downscaling'}
-              language={'python'}
+              language={'Python'}
               color={'blue'}
               href={'cmip6-downscaling'}
             >
               Pipelines and utilities for performing statistical climate
               downscaling on CMIP6 data.
+            </Card>
+            <Card
+              name={'Charts'}
+              language={'JavaScript'}
+              color={'yellow'}
+              href={'charts'}
+            >
+              Library for creating responsive, reactive, themeable charts.
             </Card>
           </Row>
         </Column>

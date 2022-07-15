@@ -1,4 +1,4 @@
-import { Box } from 'theme-ui'
+import { Flex, Box } from 'theme-ui'
 import { Link } from '@carbonplan/components'
 import { alpha } from '@theme-ui/color'
 
@@ -13,8 +13,10 @@ const Card = ({ name, language, color, href, children }) => {
         },
       }}
     >
-      <Box
+      <Flex
         sx={{
+          flexDirection: 'column',
+          justifyContent: 'space-between',
           cursor: 'pointer',
           borderColor: 'primary',
           borderWidth: '1px',
@@ -23,6 +25,7 @@ const Card = ({ name, language, color, href, children }) => {
           mt: [2],
           mb: [4],
           pb: [4],
+          minHeight: '181px',
           transition: 'background-color 0.15s',
           '@media (hover: hover) and (pointer: fine)': {
             '&:hover': {
@@ -31,22 +34,24 @@ const Card = ({ name, language, color, href, children }) => {
           },
         }}
       >
-        <Box
-          sx={{
-            fontSize: [4],
-            fontFamily: 'mono',
-          }}
-        >
-          {name}
-        </Box>
-        <Box
-          sx={{
-            fontSize: [2],
-            my: [2],
-            lineHeight: '1.1em',
-          }}
-        >
-          {children}
+        <Box>
+          <Box
+            sx={{
+              fontSize: [4],
+              fontFamily: 'mono',
+            }}
+          >
+            {name}
+          </Box>
+          <Box
+            sx={{
+              fontSize: [2],
+              my: [2],
+              lineHeight: '1.1em',
+            }}
+          >
+            {children}
+          </Box>
         </Box>
         <Box
           sx={{
@@ -75,7 +80,7 @@ const Card = ({ name, language, color, href, children }) => {
             {language}
           </Box>
         </Box>
-      </Box>
+      </Flex>
     </Link>
   )
 }
