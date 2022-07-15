@@ -7,6 +7,10 @@
     {
       "source": "/cmip6-downscaling(.*)",
       "destination": "https://cmip6-downscaling.docs.carbonplan.org/cmip6-downscaling$1"
+    },
+    {
+      "source": "/charts(.*)",
+      "destination": "https://charts.docs.carbonplan.org/charts$1"
     }
   ],
   "github": {
