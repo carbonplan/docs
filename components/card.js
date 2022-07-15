@@ -53,9 +53,10 @@ const Card = ({ name, language, color, href, children }) => {
             {children}
           </Box>
         </Box>
-        <Box
+        <Flex
           sx={{
             mt: [3],
+            alignItems: 'center',
           }}
         >
           <Box
@@ -79,7 +80,7 @@ const Card = ({ name, language, color, href, children }) => {
           >
             {language}
           </Box>
-        </Box>
+        </Flex>
       </Flex>
     </Link>
   )
