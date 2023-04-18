@@ -6,7 +6,7 @@
     },
     {
       "source": "/cmip6-downscaling(.*)",
-      "destination": "https://cmip6-downscaling.docs.carbonplan.org/cmip6-downscaling$1"
+      "destination": "https://sphinx-rtd-tutorial.readthedocs.io/$1"
     },
     {
       "source": "/charts(.*)",
