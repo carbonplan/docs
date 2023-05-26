@@ -28,7 +28,7 @@ const Index = () => {
               name={'CMIP6-downscaling'}
               language={'Python'}
               color={'blue'}
-              href={'cmip6-downscaling'}
+              href={'https://cmip6-downscaling.readthedocs.io/'}
             >
               Pipelines and utilities for performing statistical climate
               downscaling on CMIP6 data.
