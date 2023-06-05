@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/ton-year(.*)",
-      "destination": "https://ton-year.docs.carbonplan.org/ton-year$1"
+      "destination": "'https://ton-year.readthedocs.io/$1"
     },
     {
       "source": "/cmip6-downscaling(.*)",

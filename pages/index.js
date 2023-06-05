@@ -19,7 +19,7 @@ const Index = () => {
               name={'Ton-year'}
               language={'Python'}
               color={'blue'}
-              href={'/ton-year'}
+              href={'https://ton-year.readthedocs.io/'}
             >
               A Python implementation of two widely referenced ton-year
               accounting methods.
