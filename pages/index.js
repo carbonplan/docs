@@ -34,6 +34,15 @@ const Index = () => {
               downscaling on CMIP6 data.
             </Card>
             <Card
+              name={'ndpyramid'}
+              language={'Python'}
+              color={'blue'}
+              href={'https://ndpyramid.readthedocs.io/'}
+            >
+              A small utility for generating ND array pyramids using Xarray and
+              Zarr.
+            </Card>
+            <Card
               name={'Charts'}
               language={'JavaScript'}
               color={'yellow'}
