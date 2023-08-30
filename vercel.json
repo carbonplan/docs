@@ -9,6 +9,10 @@
       "destination": "https://cmip6-downscaling.readthedocs.io/$1"
     },
     {
+      "source": "/ndpyramid(.*)",
+      "destination": "https://ndpyramid.readthedocs.io/$1"
+    },
+    {
       "source": "/charts(.*)",
       "destination": "https://charts.docs.carbonplan.org/charts$1"
     }
