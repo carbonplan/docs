@@ -15,6 +15,10 @@
     {
       "source": "/charts(.*)",
       "destination": "https://charts.docs.carbonplan.org/charts$1"
+    },
+    {
+      "source": "/maps(.*)",
+      "destination": "https://maps.docs.carbonplan.org/maps$1"
     }
   ],
   "github": {

@@ -50,6 +50,14 @@ const Index = () => {
             >
               Library for creating responsive, reactive, themeable charts.
             </Card>
+            <Card
+              name={'Maps'}
+              language={'JavaScript'}
+              color={'yellow'}
+              href={'maps'}
+            >
+              Library for rendering raster data in a web map
+            </Card>
           </Row>
         </Column>
       </Row>
