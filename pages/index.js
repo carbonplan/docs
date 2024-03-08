@@ -43,6 +43,15 @@ const Index = () => {
               Zarr.
             </Card>
             <Card
+              name={'offsets-db-data'}
+              language={'Python'}
+              color={'blue'}
+              href={'https://offsets-db-data.readthedocs.io'}
+            >
+              a Python package with utilities for cleaning and processing data
+              for OffsetsDB web tool.
+            </Card>
+            <Card
               name={'Charts'}
               language={'JavaScript'}
               color={'yellow'}
