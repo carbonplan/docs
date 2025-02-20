@@ -1,10 +1,13 @@
 const path = require('path')
 const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/,
+  extension: /\.(md|mdx)$/,
+  options: {
+    format: 'mdx',
+  },
 })
 
 module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'mdx', 'md'],
+  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   webpack: (config, options) => {
     if (options.isServer) {
       config.externals = ['react', 'theme-ui', ...config.externals]
@@ -13,13 +16,13 @@ module.exports = withMDX({
       __dirname,
       '.',
       'node_modules',
-      'react',
+      'react'
     )
     config.resolve.alias['theme-ui'] = path.resolve(
       __dirname,
       '.',
       'node_modules',
-      'theme-ui',
+      'theme-ui'
     )
     return config
   },
