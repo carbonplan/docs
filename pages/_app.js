@@ -7,7 +7,7 @@ import '@carbonplan/components/fonts.css'
 import { MDXProvider } from '@mdx-js/react'
 import { useThemedStylesWithMdx } from '@theme-ui/mdx'
 import { useMDXComponents } from '@mdx-js/react'
-import { LiveCode, Pre } from '@carbonplan/prism'
+import { Code } from '@carbonplan/prism'
 import * as carbonPlanComponents from '@carbonplan/components'
 import * as carbonPlanIcons from '@carbonplan/icons'
 import * as carbonPlanEmoji from '@carbonplan/emoji'
@@ -43,15 +43,7 @@ const scope = {
 }
 
 const components = {
-  code: ({ ...props }) => (
-    <LiveCode
-      theme={'monochrome'}
-      transform={transform}
-      scope={scope}
-      {...props}
-    />
-  ),
-  pre: Pre,
+  pre: Code,
 }
 
 const ThemedMDXProvider = ({ children }) => {
