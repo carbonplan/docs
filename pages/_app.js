@@ -48,7 +48,7 @@ const components = {
 
 const ThemedMDXProvider = ({ children }) => {
   const componentsWithStyles = useThemedStylesWithMdx(
-    useMDXComponents(components)
+    useMDXComponents(components),
   )
   return <MDXProvider components={componentsWithStyles}>{children}</MDXProvider>
 }
