@@ -27,6 +27,4 @@ pip install "carbonplan[data,styles]"
 
 export default ({ children }) => (
 
-{' '}
-
 <Section name='data-science'>{children}</Section>)
