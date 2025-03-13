@@ -12,47 +12,86 @@ We mostly follow the standard Python style conventions from [PEP8](https://www.p
 
 We use a series of code linters to maintain consistent formatting across our projects. Most projects will also use `pre-commit` to automate regular execution of the linters. The linters are also regularly run as part of our continuous integration and [testing](testing) suite.
 
-### Black
+### Ruff
 
-[Black](https://black.readthedocs.io/en/stable/index.html) is an opinionated PEP-compliant code formatter. We use Black's default settings with a few minor adjustments:
+[Ruff](https://docs.astral.sh/ruff) is a Python linter and code formatter which supports a wide range of linting rules, many of which are derived from the popular tools like [Flake8](https://flake8.pycqa.org/en/latest/) and [isort](https://pycqa.github.io/isort/), [pyupgrade](https://github.com/asottile/pyupgrade) and others. Ruff provides a formatter designed to be used as a drop-in replacement for [Black](https://black.readthedocs.io/en/stable/index.html) -- an opinionated PEP-compliant code formatter.
+
+We use Ruff's default settings with a few minor adjustments:
 
 Example `pyproject.toml`:
 
 ```ini
-[tool.black]
-line-length = 100
-skip-string-normalization = true
-```
+[tool.ruff]
+    extend-include = ["*.ipynb"]
+    line-length    = 100
+    target-version = "py310"
 
-### Flake8
+    builtins = ["ellipsis"]
+    # Exclude a variety of commonly ignored directories.
+    exclude = [
+        ".bzr",
+        ".direnv",
+        ".eggs",
+        ".git",
+        ".git-rewrite",
+        ".hg",
+        ".ipynb_checkpoints",
+        ".mypy_cache",
+        ".nox",
+        ".pants.d",
+        ".pyenv",
+        ".pytest_cache",
+        ".pytype",
+        ".ruff_cache",
+        ".svn",
+        ".tox",
+        ".venv",
+        ".vscode",
+        "__pypackages__",
+        "_build",
+        "buck-out",
+        "build",
+        "dist",
+        "node_modules",
+        "site-packages",
+        "venv",
+    ]
+[tool.ruff.lint]
+    ignore = [
+        "E501", # Conflicts with ruff format
+        "E721", # Comparing types instead of isinstance
+        "E741", # Ambiguous variable names
+    ]
+    per-file-ignores = {}
+    select = [
+        # Pyflakes
+        "F",
+        # Pycodestyle
+        "E",
+        "W",
+        # isort
+        "I",
+        # Pyupgrade
+        "UP",
+    ]
 
-[Flake8](https://flake8.pycqa.org/en/latest/) provides additional code formatting sytle checks.
+[tool.ruff.lint.mccabe]
+    max-complexity = 18
 
-Example `setup.cfg`:
+[tool.ruff.lint.isort]
+    combine-as-imports = true
+    known-first-party  = []
 
-```ini
-[flake8]
-ignore = E203,E266,E501,W503,E722,E402,C901
-max-line-length = 100
-max-complexity = 18
-select = B,C,E,F,W,T4,B9
-```
+[tool.ruff.format]
+    docstring-code-format = true
+    quote-style           = "single"
 
-### isort
+[tool.ruff.lint.pydocstyle]
+    convention = "numpy"
 
-[isort](https://pycqa.github.io/isort/) automatically sorts Python imports.
-
-Example `setup.cfg`
-
-```ini
-[isort]
-known_first_party=
-known_third_party=
-multi_line_output=3
-include_trailing_comma=True
-force_grid_wrap=0
-combine_as_imports=True
-line_length=100
+[tool.ruff.lint.pyupgrade]
+    # Preserve types, even if a file imports `from __future__ import annotations`.
+    keep-runtime-typing = true
 ```
 
 ## Pre-commmit
@@ -64,7 +103,7 @@ line_length=100
 Before using Pre-commit, a command line utility needs to be added to your development environment. Pre-commit can be [installed](https://pre-commit.com/#installation) using a variety of package managers including PyPI, Homebrew, and Conda.
 
 ```
-pip install pre-commit
+python -m pip install pre-commit
 # or
 conda install -c conda-forge pre-commit
 # or
@@ -98,40 +137,28 @@ The hooks included in the pre-commit script are defined in the `.pre-commit-conf
 ```yaml
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.4.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-docstring-first
       - id: check-json
       - id: check-yaml
-      - id: pretty-format-json
-        args: ['--autofix', '--indent=2', '--no-sort-keys']
+      - id: double-quote-string-fixer
+      - id: debug-statements
+      - id: mixed-line-ending
 
-  - repo: https://github.com/ambv/black
-    rev: 21.4b2
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: 'v0.9.9'
     hooks:
-      - id: black
-        args: ['--line-length', '100']
+      - id: ruff
+        args: ['--fix']
+      - id: ruff-format
 
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 3.9.1
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
     hooks:
-      - id: flake8
-
-  - repo: https://github.com/asottile/seed-isort-config
-    rev: v2.2.0
-    hooks:
-      - id: seed-isort-config
-  - repo: https://github.com/pre-commit/mirrors-isort
-    rev: v5.8.0
-    hooks:
-      - id: isort
-
-  - repo: https://github.com/deathbeds/prenotebook
-    rev: f5bdb72a400f1a56fe88109936c83aa12cc349fa
-    hooks:
-      - id: prenotebook
+      - id: prettier
 ```
 
 export default ({ children }) => (

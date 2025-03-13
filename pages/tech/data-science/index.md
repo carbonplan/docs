@@ -2,7 +2,7 @@ import Section from '../../../components/section'
 
 # Data Science Overview
 
-Our data science toolset is built on top of the open source Scientific Python ecosystem. We make extensive use of open source frameworks such as the [Pangeo Project](https://pangeo.io/) and open source cloud infrastructure such as [Kubernetes](https://kubernetes.io/).
+Our data science toolset is built on top of the open source Scientific Python ecosystem. We make extensive use of open source frameworks such as the [Xarray](https://xarray.dev/) package for working with multi-dimensional arrays, and the [Dask](https://dask.org/) package for parallel computing. We also rely on a number of other open source packages for data analysis and visualization.
 
 ## Core projects
 
@@ -15,7 +15,7 @@ We maintain a few core projects that help tie together CarbonPlan's data science
 All of these projects can be installed from [PyPI](https://pypi.org/search/?q=carbonplan):
 
 ```
-pip install "carbonplan[data,styles]"
+python -m pip install "carbonplan[data,styles]"
 ```
 
 ## Guides
