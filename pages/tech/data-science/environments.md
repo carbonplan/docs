@@ -8,5 +8,4 @@ import Section from '../../../components/section'
 
 export default ({ children }) => (
 
-{' '}
 <Section name='environments'>{children}</Section>)
