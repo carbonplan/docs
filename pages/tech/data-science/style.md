@@ -1,4 +1,5 @@
 import Section from '../../../components/section'
+import Sidenote from '../../../components/sidenote'
 
 # Python Style Guide
 
@@ -129,6 +130,8 @@ pre-commit run [--all-files]
 ```
 
 The standard execution will only run pre-commit on modified files. Adding the `--all-files` option will run the pre-commit script on all files within the respository.
+
+Note that `pre-commit` can sometimes be difficult to satisfy. You can often get around this by running `git commit --no-verify` to skip the pre-commit hook. However, this is not recommended as it can lead to inconsistent code formatting and style issues.
 
 ### Pre-commit configuration
 

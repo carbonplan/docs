@@ -20,7 +20,7 @@ python -m pip install "carbonplan[data,styles]"
 
 ## Guides
 
-- [Contribution Guid](data-science/contributing)
+- [Contribution Guide](data-science/contributing)
 - [Style Guide](data-science/style)
 - [Testing Guide](data-science/testing)
 - [Python Environments Guide](data-science/environments)
