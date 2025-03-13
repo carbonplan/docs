@@ -135,34 +135,7 @@ Note that `pre-commit` can sometimes be difficult to satisfy. You can often get 
 
 ### Pre-commit configuration
 
-The hooks included in the pre-commit script are defined in the `.pre-commit-config.yaml` file in each repository. Below is an example of a standard pre-commit configuration.
-
-```yaml
-repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
-    hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-docstring-first
-      - id: check-json
-      - id: check-yaml
-      - id: double-quote-string-fixer
-      - id: debug-statements
-      - id: mixed-line-ending
-
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.9.9'
-    hooks:
-      - id: ruff
-        args: ['--fix']
-      - id: ruff-format
-
-  - repo: https://github.com/pre-commit/mirrors-prettier
-    rev: v4.0.0-alpha.8
-    hooks:
-      - id: prettier
-```
+The hooks included in the pre-commit script are defined in the `.pre-commit-config.yaml` file in each repository. Below is an example of a standard pre-commit configuration. See this example [pre-commit-config.yaml](https://github.com/carbonplan/carbonplan-cookiecutter-python/blob/main/%7B%7Bcookiecutter.project_name%7D%7D/.pre-commit-config.yaml) file for a more complete example.
 
 export default ({ children }) => (
 
