@@ -1,5 +1,4 @@
-import { Column, Layout, Row } from '@carbonplan/components'
-import Link from 'next/link'
+import { Column, Layout, Link, Row } from '@carbonplan/components'
 import { Box, Text } from 'theme-ui'
 import Card from '../components/card'
 import Heading from '../components/heading'
@@ -19,11 +18,10 @@ const Index = () => {
           <Box variant='text.mono'>
             <Text>
               You can also check out our{' '}
-              <Link variant='text.mono' href={'tech/data-science'}>
+              <Link href={'tech/data-science'}>
                 data science
               </Link>{' '}
-              and <Link href={'tech/front-end'}>front-end</Link> contributor
-              guides on how to contribute to our projects.
+              contributor guide on how to contribute to our projects.
             </Text>
           </Box>
         </Column>
