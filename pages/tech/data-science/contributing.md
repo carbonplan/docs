@@ -22,5 +22,6 @@ This page serves as a general contribution guide for CarbonPlan data science pro
 - more?
 
 export default ({ children }) => (
-  <Section name='contributiing'>{children}</Section>
-)
+
+{' '}
+<Section name='contributiing'>{children}</Section>)

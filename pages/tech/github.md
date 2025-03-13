@@ -10,7 +10,7 @@ There are many tutorials (i.e. [here](https://lab.github.com/githubtraining/intr
 
 ### Navigating the CarbonPlan Organization
 
-GitHub Organizations are shared accounts that allow organizations, like CarbonPlan, collaborate on multiple projects at once. CarbonPlan's GitHub organization (https://github.com/carbonplan) is the central development location for all of our data-science and front-end projects. Important featurs at the organization level include:
+GitHub Organizations are shared accounts that allow organizations, like CarbonPlan, collaborate on multiple projects at once. CarbonPlan's GitHub organization (<https://github.com/carbonplan>) is the central development location for all of our data-science and front-end projects. Important featurs at the organization level include:
 
 - [Repositories](https://github.com/orgs/carbonplan/repositories): a listing of our projects (aka repositories)
 - [People](https://github.com/orgs/carbonplan/people): a listing of members of the CarbonPlan GitHub organization and outside collaborators

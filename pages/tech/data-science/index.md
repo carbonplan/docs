@@ -26,5 +26,7 @@ pip install "carbonplan[data,styles]"
 - [Python Environments Guide](data-science/environments)
 
 export default ({ children }) => (
-  <Section name='data-science'>{children}</Section>
-)
+
+{' '}
+
+<Section name='data-science'>{children}</Section>)

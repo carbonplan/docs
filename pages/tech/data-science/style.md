@@ -135,5 +135,7 @@ repos:
 ```
 
 export default ({ children }) => (
-  <Section name='style-guide'>{children}</Section>
-)
+
+{' '}
+
+<Section name='style-guide'>{children}</Section>)

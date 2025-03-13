@@ -7,5 +7,6 @@ import Section from '../../../components/section'
 - testing environments
 
 export default ({ children }) => (
-  <Section name='environments'>{children}</Section>
-)
+
+{' '}
+<Section name='environments'>{children}</Section>)
