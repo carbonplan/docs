@@ -8,9 +8,9 @@ This site provides documentation aimed at supporting our core software, data, an
 
 ## Guides
 
-- [Contribution Guide](/contributing)
-- [Style Guide](/style)
-- [Testing Guide](/testing)
-- [Python Environments Guide](/environments)
+- [Contribution Guide](/tech/contributing)
+- [Style Guide](/tech/style)
+- [Testing Guide](/tech/testing)
+- [Python Environments Guide](/tech/environments)
 
 export default ({ children }) => <Section name='intro'>{children}</Section>

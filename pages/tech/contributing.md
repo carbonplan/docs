@@ -4,27 +4,80 @@ import Section from '../../components/section'
 
 This page serves as a general contribution guide for CarbonPlan data science projects. Some projects within the organization may also provide customized contribution guides.
 
-- where to start
-- bug reports and enhancement requests
-- developing
+## Getting Started
 
-  - link to page on github
-  - creating a development environment
-  - work on a fork/branch
-  - contributing to the documentation (leave as a TODO block)
-  - contributing to the code base
+If you're new to contributing to CarbonPlan projects, here are some resources to help you get started:
 
-    - code standards (link to testing)
-    - code formatting (link to sytle)
-    - test driven development
-    - documenting your code (numpydoc)
+- Familiarize yourself with our [GitHub organization](https://github.com/carbonplan)
+- Read our [Code of Conduct](./conduct)
+- Check out our [style guide](./style) to understand our coding standards
 
-  - git workflow for committing and pushing your changes, open a pull request
-  - code review
+## Reporting Issues
 
-- project versioning
-- more?
+We use GitHub Issues to track bugs and feature requests. When submitting an issue:
+
+- Use clear, descriptive titles
+- Provide detailed steps to reproduce bugs
+- For feature requests, explain why the feature would be useful
+- Include relevant information about your environment
+
+## Development Workflow
+
+### Setting Up Your Environment
+
+1. Fork the repository on GitHub
+2. Clone your fork locally
+3. Set up the development environment (project-specific instructions will be in each repository's README)
+
+### Branch Strategy
+
+- Work on a feature branch named appropriately (e.g., `feature/add-new-filter` or `fix/resolve-data-loading-issue`)
+- Keep your branch focused on a single issue or feature
+- Reference our [GitHub workflow](./github) for more details on branches and pull requests
+
+### Code Contributions
+
+When contributing code:
+
+- Follow our [style guide](./style) for code formatting
+- Write [tests](./testing) for new functionality
+- Update documentation to reflect your changes
+- Use [numpydoc](https://numpydoc.readthedocs.io/en/latest/format.html) style for Python docstrings
+
+### Documentation Contributions
+
+Good documentation is as important as good code:
+
+- Keep language clear and concise
+- Update examples to reflect code changes
+- Ensure documentation builds without errors
+- Preview changes locally before submitting
+
+### Submitting Changes
+
+1. Commit your changes with descriptive messages
+2. Push to your fork
+3. Submit a pull request from your branch to the main repository
+4. Address feedback during code review
+
+## Code Review Process
+
+All submissions go through a review process:
+
+- A maintainer will review your PR
+- Automated tests must pass
+- Changes may be requested before merging
+- Be responsive to questions and feedback
+
+## Project Versioning
+
+Different projects may have different versioning schemes. However, we generally use both
+
+- [Calendar Versioning (CalVer)](https://calver.org/). The format is `YYYY.MM.DD` or `YYYY.MM.DD.N` and
+- [Semantic Versioning (SemVer)](https://semver.org/). The format is `MAJOR.MINOR.PATCH` (e.g., `1.2.3`)
+
+The choice of versioning scheme depends on the project and its goals. For example, we use CalVer for projects that are updated frequently (e.g. [offsets-db-data](https://github.com/carbonplan/offsets-db-data)) and SemVer for projects (e.g. [cmip6-downscaling](https://github.com/carbonplan/cmip6-downscaling)) that have a more stable release cycle.
 
 export default ({ children }) => (
-
-<Section name='contributiing'>{children}</Section>)
+  <Section name='contributing'>{children}</Section>
+)
