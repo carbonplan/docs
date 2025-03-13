@@ -18,8 +18,8 @@ const Index = () => {
           <Box variant='text.mono'>
             <Text>
               You can also check out our{' '}
-              <Link href={'tech/data-science'}>data science</Link> contributor
-              guide on how to contribute to our projects.
+              <Link href={'tech/'}> contributor guide </Link>
+              on how to contribute to our projects.
             </Text>
           </Box>
         </Column>

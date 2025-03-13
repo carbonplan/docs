@@ -1,5 +1,5 @@
-import Section from '../../../components/section'
-import Sidenote from '../../../components/sidenote'
+import Section from '../../components/section'
+import Sidenote from '../../components/sidenote'
 
 # Python Style Guide
 
