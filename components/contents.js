@@ -10,10 +10,4 @@ export const contents = {
     Style: '/tech/data-science/style',
     Testing: '/tech/data-science/testing',
   },
-  'Front-end': {
-    Overview: '/tech/front-end',
-    Articles: '/tech/front-end/articles',
-    Contributing: '/tech/front-end/contributing',
-    Deployment: '/tech/front-end/deployment',
-  },
 }
