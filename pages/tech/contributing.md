@@ -71,13 +71,17 @@ All submissions go through a review process:
 
 ## Project Versioning
 
-Different projects may have different versioning schemes. However, we generally use both
+The choice of versioning scheme depends on the project and its goals. We use two versioning schemes depending on the project type:
 
-- [Calendar Versioning (CalVer)](https://calver.org/). The format is `YYYY.MM.DD` or `YYYY.MM.DD.N` and
-- [Semantic Versioning (SemVer)](https://semver.org/). The format is `MAJOR.MINOR.PATCH` (e.g., `1.2.3`)
-
-The choice of versioning scheme depends on the project and its goals. For example, we use CalVer for projects that are updated frequently (e.g. [offsets-db-data](https://github.com/carbonplan/offsets-db-data)) and SemVer for projects (e.g. [cmip6-downscaling](https://github.com/carbonplan/cmip6-downscaling)) that have a more stable release cycle.
+- [Calendar Versioning (CalVer)](https://calver.org/)
+  - The format is `YYYY.MM.DD` or `YYYY.MM.DD.N`
+  - Used for: projects with frequent updates (e.g., [offsets-db-data](https://github.com/carbonplan/offsets-db-data))
+  - When: release schedule is time-based rather than feature-based
+- [Semantic Versioning (SemVer)](https://semver.org/)
+  - The format is `MAJOR.MINOR.PATCH` (e.g., `1.2.3`)
+  - Used for: projects with a more stable release cycle (e.g., [cmip6-downscaling](https://github.com/carbonplan/cmip6-downscaling))
+  - When: breaking changes need to be communicated clearly and new features are added in a backwards-compatible manner.
 
 export default ({ children }) => (
-  <Section name='contributing'>{children}</Section>
-)
+
+<Section name='contributing'>{children}</Section>)
