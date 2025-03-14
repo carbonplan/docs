@@ -11,6 +11,6 @@ This site provides documentation aimed at supporting our core software, data, an
 - [Contribution Guide](/tech/contributing)
 - [Style Guide](/tech/style)
 - [Testing Guide](/tech/testing)
-- [Python Environments Guide](/tech/environments)
+- [Computational Environments Guide](/tech/environments)
 
 export default ({ children }) => <Section name='intro'>{children}</Section>

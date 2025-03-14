@@ -3,8 +3,8 @@ export const contents = {
     Conduct: '/tech/conduct',
     GitHub: '/tech/github',
   },
-  'Contributing Guide': {
-    Intro: '/tech/contributing',
+  Guides: {
+    Contributing: '/tech/contributing',
     Environments: '/tech/environments',
     Style: '/tech/style',
     Testing: '/tech/testing',
