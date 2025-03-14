@@ -126,12 +126,10 @@ At this point, future commits to this Git repository will trigger the execution 
 It is often useful to run the pre-commit script during developemnt, even before you are ready to create a Git commit.
 
 ```
-pre-commit run [--all-files]
+pre-commit run
 ```
 
 The standard execution will only run pre-commit on modified files. Adding the `--all-files` option will run the pre-commit script on all files within the respository.
-
-Note that `pre-commit` can sometimes be difficult to satisfy. You can often get around this by running `git commit --no-verify` to skip the pre-commit hook. However, this is not recommended as it can lead to inconsistent code formatting and style issues.
 
 ### Pre-commit configuration
 
