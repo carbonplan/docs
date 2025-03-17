@@ -9,7 +9,7 @@ This page serves as a general contribution guide for CarbonPlan data science pro
 If you're new to contributing to CarbonPlan projects, here are some resources to help you get started:
 
 - Familiarize yourself with our [GitHub organization](https://github.com/carbonplan)
-- Read our [Code of Conduct](./conduct)
+- Read our [Code of Conduct](https://github.com/carbonplan/.github/blob/main/CODE_OF_CONDUCT.md)
 - Check out our [style guide](./style) to understand our coding standards
 
 ## Reporting Issues
