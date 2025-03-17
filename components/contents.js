@@ -1,6 +1,7 @@
 export const contents = {
   Basics: {
-    Conduct: '/tech/conduct',
+    Conduct:
+      'https://github.com/carbonplan/.github/blob/main/CODE_OF_CONDUCT.md',
     GitHub: '/tech/github',
   },
   Guides: {
