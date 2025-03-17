@@ -1,4 +1,5 @@
 import Section from '../../components/section'
+import { Table } from '@carbonplan/components'
 
 # Computational Environments
 
@@ -11,13 +12,29 @@ At CarbonPlan, we use different types of computational environments to support o
 
 These environments support various activities across our workflow:
 
-| Activity        | Local Environment   | Docker                   |
-| --------------- | ------------------- | ------------------------ |
-| Development     | ✅ Primary choice   | ⚠️ Can be slower         |
-| Testing         | ✅ Quick iterations | ✅ CI integration        |
-| Deployment      | ❌ Not recommended  | ✅ Best practice         |
-| Reproducibility | ⚠️ Limited          | ✅ Excellent             |
-| Collaboration   | ⚠️ Setup required   | ✅ Consistent experience |
+<Table
+  header={'Environment Comparison'}
+  color={'secondary'}
+  columns={[6, 7, 7, 7]}
+  start={[[1], [1, 3, 3, 3], [1, 5, 5, 5]]}
+  width={[
+    [6, 2, 2, 2],
+    [6, 2, 2, 2],
+    [6, 2, 2, 2],
+  ]}
+  data={[
+    ['Activity', 'Local Environment', 'Docker'],
+    ['Development', '✅ Primary choice', '⚠️ Can be slower'],
+    ['Testing', '✅ Quick iterations', '✅ CI integration'],
+    ['Deployment', '❌ Not recommended', '✅ Best practice'],
+    ['Reproducibility', '⚠️ Limited', '✅ Excellent'],
+    ['Collaboration', '⚠️ Setup required', '✅ Consistent experience'],
+  ]}
+  borderTop={false}
+  borderBottom={false}
+  index={false}
+  sx={{ my: [3] }}
+/>
 
 ## Local environments
 
