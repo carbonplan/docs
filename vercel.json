@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/ton-year/:path*",
-      "destination": "'https://ton-year.readthedocs.io/:path*"
+      "destination": "https://ton-year.readthedocs.io/:path*"
     },
     {
       "source": "/offsets-db-data/:path*",
