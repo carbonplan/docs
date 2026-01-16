@@ -6,7 +6,7 @@
     },
     {
       "source": "/offsets-db-data/:path*",
-      "destination": "'https://offsets-db-data.readthedocs.io/:path*"
+      "destination": "https://offsets-db-data.readthedocs.io/:path*"
     },
     {
       "source": "/cmip6-downscaling/:path*",
