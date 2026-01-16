@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/ocr/en/latest/:path*.html",
+      "destination": "https://carbonplan.github.io/ocr/:path*"
+    },
+    {
+      "source": "/ocr/:path*",
+      "destination": "https://carbonplan.github.io/ocr/:path*"
+    },
+    {
       "source": "/ton-year/:path*",
       "destination": "https://ton-year.readthedocs.io/:path*"
     },
