@@ -1,16 +1,16 @@
 {
   "rewrites": [
     {
-      "source": "/ton-year(.*)",
-      "destination": "'https://ton-year.readthedocs.io/$1"
+      "source": "/ton-year/:path*",
+      "destination": "'https://ton-year.readthedocs.io/:path*"
     },
     {
-      "source": "/cmip6-downscaling(.*)",
-      "destination": "https://cmip6-downscaling.readthedocs.io/$1"
+      "source": "/cmip6-downscaling/:path*",
+      "destination": "https://cmip6-downscaling.readthedocs.io/:path*"
     },
     {
-      "source": "/ndpyramid(.*)",
-      "destination": "https://ndpyramid.readthedocs.io/$1"
+      "source": "/ndpyramid/:path*",
+      "destination": "https://ndpyramid.readthedocs.io/:path*"
     },
     {
       "source": "/charts(.*)",
