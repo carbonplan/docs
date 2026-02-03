@@ -1,12 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/ocr/en/latest/:path*.html",
-      "destination": "https://carbonplan.github.io/ocr/:path*"
+      "source": "/open-climate-risk/:path*",
+      "destination": "https://open-climate-risk.readthedocs.io/:path*"
     },
     {
       "source": "/ocr/:path*",
-      "destination": "https://carbonplan.github.io/ocr/:path*"
+      "destination": "https://open-climate-risk.readthedocs.io/:path*"
     },
     {
       "source": "/ton-year/:path*",
