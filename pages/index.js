@@ -16,6 +16,15 @@ const Index = () => {
         <Column start={[1, 2, 3, 3]} width={[6, 8, 9, 9]}>
           <Row columns={[2, 3, 3, 3]}>
             <Card
+              name={'Open-Climate-Risk'}
+              language={'Python'}
+              color={'blue'}
+              href={'https://open-climate-risk.readthedocs.io/'}
+            >
+              Pipeline for analyzing and visualizing building-level wildfire
+              risk.
+            </Card>
+            <Card
               name={'Ton-year'}
               language={'Python'}
               color={'blue'}
