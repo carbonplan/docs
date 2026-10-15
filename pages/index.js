@@ -28,7 +28,7 @@ const Index = () => {
               name={'zarr-layer'}
               language={'JavaScript'}
               color={'yellow'}
-              href={'https://zarr-layer.demo.carbonplan.org/'}
+              href={'https://github.com/carbonplan/zarr-layer'}
             >
               Flexible Zarr rendering for maplibre and mapbox maps.
             </Card>
