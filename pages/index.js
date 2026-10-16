@@ -16,6 +16,31 @@ const Index = () => {
         <Column start={[1, 2, 3, 3]} width={[6, 8, 9, 9]}>
           <Row columns={[2, 3, 3, 3]}>
             <Card
+              name={'SAI-downscaling'}
+              language={'Python'}
+              color={'blue'}
+              href={'https://sai-downscaling.readthedocs.io/en/latest/'}
+            >
+              Downscaling pipeline for stratospheric aerosol injection climate
+              scenarios
+            </Card>
+            <Card
+              name={'zarr-layer'}
+              language={'JavaScript'}
+              color={'yellow'}
+              href={'https://github.com/carbonplan/zarr-layer'}
+            >
+              Flexible Zarr rendering for maplibre and mapbox maps.
+            </Card>
+            <Card
+              name={'topozarr'}
+              language={'Python'}
+              color={'blue'}
+              href={'https://github.com/carbonplan/topozarr'}
+            >
+              Create multiscale Zarr stores for visualization.
+            </Card>
+            <Card
               name={'Open-Climate-Risk'}
               language={'Python'}
               color={'blue'}
